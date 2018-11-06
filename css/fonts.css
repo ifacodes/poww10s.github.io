@@ -1,0 +1,41 @@
+
+/* Karla */
+
+@font-face {
+    font-family: 'Karla';
+    src: url(../fonts/Karla-Regular.ttf) format("truetype");
+
+}
+@font-face {
+    font-family: 'Karla';
+    src:    url(../fonts/Karla-Italic.ttf) format("truetype"); 
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Karla';
+    src:    url(../fonts/Karla-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Karla';
+    src:    url(../fonts/Karla-BoldItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Inconsolata */
+@font-face {
+    font-family: 'Inconsolata';
+    src:    url(../fonts/Inconsolata-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src:    url(../fonts/Inconsolata-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Monoton';
+    src:    url(../fonts/Monoton/Monoton-Regular.ttf) format(truetype);
+}

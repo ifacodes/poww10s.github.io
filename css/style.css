@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,700|Oswald:400,500,600');
+
+body {
+    font-family: 'Gothic A1', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+
+.container {
+    width:80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+header{
+    font-family: 'Oswald', sans-serif;
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 55px;
+    /*border-bottom:#e8491d 3px solid;*/
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #titlebar {
+    float: left;
+}
+
+header #titlebar h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+header nav {
+    float: right;
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+header .current a {
+    color:#e8491d;
+    font-weight: 500;
+}
+
+header a:hover {
+    color:#cccccc;
+    font-weight: 500;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 30px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width:30%;
+    padding: 10px;
+}
+#boxes .box img{
+    width: 90px;
+}
+
+.sidebar {
+    position: fixed;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
