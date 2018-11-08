@@ -2,7 +2,7 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
-//const menuBranding = document.querySelector('.menu-branding');
+const body = document.body;
 const main = document.querySelector('#home');
 const title = document.querySelector('#title');
 const footer = document.querySelector('#main-footer');
@@ -30,13 +30,9 @@ function toggleMenu() {
         title.classList.add('show');
         footer.classList.add('show');
         navItems.forEach(item => item.classList.add('show'));
-
+        body.classList.add('noScroll');
         // Set Menu State
         showMenu = true;
-        function disable() {
-            document.removeEventListener('mousewheel', Go);
-            document.removeEventListener('DOMMouseScroll', Go);
-            }
     } else {
         menuBtn.classList.remove('close');
         menu.classList.remove('show');
@@ -46,12 +42,8 @@ function toggleMenu() {
         title.classList.remove('show');
         footer.classList.remove('show');
         navItems.forEach(item => item.classList.remove('show'));
-
+        body.classList.remove('noScroll');
         // Set Menu State
         showMenu = false;
-        function enable() {
-            document.addEventListener('mousewheel', Go);
-            document.addEventListener('DOMMouseScroll', Go);
-            }
     }
 }

@@ -161,3 +161,7 @@
         transition-delay: $x * 0.1s;
     }
 }
+
+.noScroll{
+    overflow: hidden;
+}

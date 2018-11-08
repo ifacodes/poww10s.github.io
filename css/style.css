@@ -194,6 +194,10 @@
           transition-delay: 0.4s;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
