@@ -87,10 +87,10 @@
         background: $primary-color;
         transform: translate3d(0, 100%, 0);
         @include easeOut;
-        &.show {
+        //&.show {
             //slide in from bottom
             //transform: translate3d(0, 0, 0);
-        }
+        //}
         
         .portrait {
             width: 250px;
