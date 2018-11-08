@@ -19,8 +19,9 @@ body {
 // Headings
 
 h1, h2, h3 {
+  font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 
   &.lg-heading {
     font-size: 6rem;
@@ -34,7 +35,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: white;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -42,6 +43,26 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  border: 0;
+  box-shadow: 0 0.1px 6px 0 hsla(0, 0%, 0%, 0.1);
+
+  .topbar {
+    padding: 1rem;
+    background: white;
+    display:block;
+    position: relative;
+    box-sizing: border-box;
+    border-top: $secondary-color 4px solid;
+  }
+
+  h2.title {
+    text-align: center;
+    letter-spacing: 0.7px;
+    a {
+      position: relative;
+      top: -.12em;
+    }
+  }
 }
 
 .text-secondary {

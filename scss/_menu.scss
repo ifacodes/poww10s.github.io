@@ -1,18 +1,22 @@
 // Menu Button
 .menu-btn {
     position: absolute;
+    justify-self: center;
+    align-self: center;
+    top: 1.65rem;
+    right: 3.5rem;
     z-index: 3;
-    right: 35px;
-    top: 35px;
     cursor: pointer;
     @include easeOut;
 
     .btn-line {
-        width: 28px;
-        height: 3px;
-        margin: 0 0 5px 0;
-        background: white;
-        @include easeOut;
+        width: 18px;
+        height: 2px;
+        background: #333333;
+        @include easeOut;   
+        &:nth-child(2) {
+            margin: 4px 0;
+        }
     }
 
     // Rotate Lines
@@ -22,7 +26,8 @@
         .btn-line {
             // Line 1 - Rotate
             &:nth-child(1) {
-                transform: translate(0px, 8px) rotate(45deg) ;
+                transform: translate(0px, 6px) rotate(45deg) ;
+                
             }
 
             // Line 2 - Hide
@@ -33,7 +38,7 @@
             // Line 3 - Rotate
 
             &:nth-child(3) {
-                transform: translate(0px, -8px) rotate(-45deg);
+                transform: translate(0px, -6px) rotate(-45deg);
             }
         }
     }
