@@ -208,17 +208,34 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3 {
+body #hideAll {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: white;
+  z-index: 99;
+  /* Higher than anything else in the document */
+}
+
+h1,
+h2,
+h3 {
   font-family: "Oswald", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   font-weight: 500;
 }
 
-h1.lg-heading, h2.lg-heading, h3.lg-heading {
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
   font-size: 6rem;
 }
 
-h1.sm-heading, h2.sm-heading, h3.sm-heading {
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background: rgba(246, 245, 247, 0.5);
@@ -255,7 +272,7 @@ header h2#title {
 
 header h2#title a {
   position: relative;
-  top: -.12em;
+  top: -0.12em;
 }
 
 .text-secondary {
@@ -297,7 +314,7 @@ main#home .about {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: '. profileimage bio bio .' '. job1 job2 job3 .';
+      grid-template-areas: ". profileimage bio bio ." ". job1 job2 job3 .";
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }

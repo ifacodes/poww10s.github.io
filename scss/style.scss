@@ -1,12 +1,21 @@
-@import 'config';
-@import 'menu';
-
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  #hideAll {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    z-index: 99; /* Higher than anything else in the document */
+  }
+  
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
@@ -18,8 +27,10 @@ body {
 
 // Headings
 
-h1, h2, h3 {
-  font-family: $oswald, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: $oswald, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   font-weight: 500;
 
@@ -49,7 +60,7 @@ header {
   .topbar {
     padding: 1rem;
     background: white;
-    display:block;
+    display: block;
     position: relative;
     box-sizing: border-box;
     border-top: $secondary-color 4px solid;
@@ -60,7 +71,7 @@ header {
     letter-spacing: 0.7px;
     a {
       position: relative;
-      top: -.12em;
+      top: -0.12em;
     }
   }
 }
@@ -100,12 +111,12 @@ main {
 
 //About Page Stuff
 
-.about{
+.about {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-  '. profileimage bio bio .'
-  '. job1 job2 job3 .';
+    ". profileimage bio bio ."
+    ". job1 job2 job3 .";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   .profileimage {
@@ -115,25 +126,25 @@ main {
     border-radius: 50%;
     border: solid 3px $secondary-color;
   }
-  
+
   .bio {
     font-weight: 400;
     grid-area: bio;
     font-size: 1.2rem;
   }
-  
+
   .job1 {
     grid-area: job1;
   }
-  
+
   .job2 {
     grid-area: job2;
   }
-  
+
   .job3 {
     grid-area: job3;
   }
-  
+
   .job {
     background: #fff;
     padding: 0.5rem;
@@ -158,4 +169,4 @@ main {
   height: 60px;
 }
 
-@import 'mobile';
+@import "mobile";

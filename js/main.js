@@ -11,6 +11,10 @@ const navItems = document.querySelectorAll('.nav-item');
 //set initial state of menu
 let showMenu = false;
 
+// document.getElementById("hideAll").style.display = "block";
+
+// window.onload = function() 
+// { document.getElementById("hideAll").style.display = "none"; }
 
 menuBtn.addEventListener('click', toggleMenu);
 
