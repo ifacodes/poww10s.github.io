@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
-<body id="bg-img">
+<body id>
     <header>
         <div class="topbar">
                 <h2 id="title">
@@ -21,18 +21,18 @@
                 </div>
             </div>   
         <nav class="menu">
-            <!-- <div class="menu-branding">
-                <div class="portrait"> 
+            <div class="menu-branding">
+                <div class="portrait">
 
                 </div>
-            </div>-->
+            </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="/index.html" class="nav-link">
                         Home
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="/about.html" class="nav-link">
                         About
                     </a>
@@ -52,12 +52,35 @@
     </header>
 
     <main id="home">
-        <h1 class="lg-heading">
-            Daniel <span class="text-secondary">Bradley</span>
-        </h1>
-        <h2 class="sm-heading">
-            LOLOLOLOLOLOLOLOLOLOL
-        </h2>
+        <div class="about">
+            <img src="img/angrylemonprofile.png" alt="Daniel Bradley" class="profileimage">
+
+            <div class="grid bio">
+                <h3 class="text-secondary">BIO</h3>
+                <p>Hi! I'm Daniel Bradley, currently a student at the University of Guelph in Ontario, Canada.
+                    I've built this website as a portfolio of sorts, and also as a way for me to organise some of my hobbies.
+                    Below is some information about myself, probably not all the interesting.
+                </p>
+            </div>
+            <div class="grid job job1">
+                <h3>Programming</h3>
+                <p>I'm most comfortable working in C/C++.</p>
+                    <ul class="languages">
+                        <li>C/C++</li>
+                        <li>C#</li>
+                        <li>Rust</li>
+                        <li>Lua</li>
+                        <li>Java</li>
+                        <li>HTML/CSS</li>
+                    </ul> 
+            </div>
+            <div class="grid job job2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt adipisci possimus. Modi repellat, cumque error vitae animi, similique voluptatibus nesciunt quaerat nihil, doloribus ipsam! Dignissimos iusto officia praesentium eligendi?</p>
+            </div>
+            <div class="grid job job3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt adipisci possimus. Modi repellat, cumque error vitae animi, similique voluptatibus nesciunt quaerat nihil, doloribus ipsam! Dignissimos iusto officia praesentium eligendi?</p>
+            </div>
+        </div>
         <div class="icons">
             <a href="#!">
                 <i class="fab fa-twitter fa-2x"></i>
@@ -72,8 +95,8 @@
     </main>
 
     <footer id="main-footer">
-            Copyright &copy; 2018
-        </footer>
+        Copyright &copy; 2018
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
