@@ -365,6 +365,9 @@ main#home .about {
 }
 
 @media screen and (max-width: 768px) {
+  header .topbar {
+    z-index: 2;
+  }
   main {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -375,37 +378,43 @@ main#home .about {
     line-height: 1;
     margin-bottom: 1rem;
   }
-  ul.menu-nav,
-  div.menu-branding {
+  ul.menu-nav {
     float: none;
     width: 100%;
     min-height: 0;
   }
-  ul.menu-nav.show,
-  div.menu-branding.show {
+  ul.menu-nav.show {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
   .menu-nav {
-    height: 75vh;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-  .menu-branding {
-    height: 25vh;
+    height: 100vh;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
+    font-size: 24px;
   }
-  .menu-branding .portrait {
-    background: url "../img/angrylemonportaitsmall.png";
-    width: 150px;
-    height: 150px;
-  }
-  .about {
+  /*.menu-branding {
+        height: 25vh;
+        transform: translate3d(-100%, 0, 0);
+        .portrait {
+            background: url
+            ('../img/angrylemonportaitsmall.png');
+            width: 150px;
+            height: 150px;
+        }
+    }*/
+  #home .about {
         grid-template-areas: 'profileimage' 'bio' 'job1' 'job2' 'job3';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  #home.show .about {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  #title.show, #main-footer.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
