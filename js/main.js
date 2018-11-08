@@ -16,6 +16,8 @@ let showMenu = false;
 // window.onload = function() 
 // { document.getElementById("hideAll").style.display = "none"; }
 
+    
+
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
@@ -31,6 +33,10 @@ function toggleMenu() {
 
         // Set Menu State
         showMenu = true;
+        function disable() {
+            document.removeEventListener('mousewheel', Go);
+            document.removeEventListener('DOMMouseScroll', Go);
+            }
     } else {
         menuBtn.classList.remove('close');
         menu.classList.remove('show');
@@ -43,5 +49,9 @@ function toggleMenu() {
 
         // Set Menu State
         showMenu = false;
+        function enable() {
+            document.addEventListener('mousewheel', Go);
+            document.addEventListener('DOMMouseScroll', Go);
+            }
     }
 }
