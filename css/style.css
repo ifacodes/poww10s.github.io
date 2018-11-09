@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700|Oswald:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700|Oswald:400,500,600,700");
 .menu-btn {
   position: absolute;
   -ms-grid-column-align: center;
@@ -369,12 +369,42 @@ main#home .about {
 }
 
 .about .job h3 {
-  font-weight: 600;
+  font-weight: 700;
+  padding: 5px 0 10px 10px;
 }
 
 .about .job p {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
   margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.about .job div.table {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about .job div.table ul {
   padding: 0;
+  list-style: none;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.about .job div.table ul li {
+  margin: 0 0 2.2% 0;
 }
 
 #main-footer {
@@ -383,6 +413,14 @@ main#home .about {
   background: #fff;
   color: #242424;
   height: 60px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1510px) {
+  .about {
+        grid-template-areas: "profileimage bio bio" "job1 job2 job3";
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {

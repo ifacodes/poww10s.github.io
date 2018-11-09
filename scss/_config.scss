@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700|Oswald:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700|Oswald:400,500,600,700');
 
 $gothic-a1: 'Gothic A1', sans-serif;
 $oswald: 'Oswald', sans-serif;
@@ -60,13 +60,13 @@ $background-opacity: 0.9;
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 769px) and (max-width: 1510px) {
     @content;
   }
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1171px) {
+  @media screen and (min-width: 1511px) {
     @content;
   }
 }

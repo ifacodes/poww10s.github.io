@@ -5,7 +5,12 @@
 }
 // Desk/Lap
 @include mediaLg {
-    
+    .about {
+        grid-template-areas:
+        "profileimage bio bio"
+        "job1 job2 job3";       
+        grid-template-columns: repeat(3, 1fr); 
+    }
 }
 // Tab/SmLap
 @include mediaMd {
